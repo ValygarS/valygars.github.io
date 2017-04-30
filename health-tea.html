@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="description" content="Tea health benefits: Chinese Traditional Medicine">
+		<meta name="keywords" content="Tea, chinese tea, tea culture, tea history, tea brewing, black tea, white tea, oolong, green tea, yellow tea, puer tea, puerh, pu'er, pu erh">
+        <title>Chinese Tea Health Benefits</title>
+        <link rel="stylesheet" href="./css/uikit.min.css"/>
+		<link rel="stylesheet" href="./css/mystyles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./js/uikit.min.js"></script>
+        <script src="./js/uikit-icons.min.js"></script>
+        <script src="./js/myjavascript.js"></script>
+    </head>
+    <body>
+		
+		<header>
+		<!-- Nav with dropdown menu goes here -->
+			<nav id="mynav" class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left">
+					<a class="uk-navbar-brand" href="#"><img id="logo" src="./images/logos.jpg" title="World of Chinese Tea" alt="World of Chinese Tea"/></a>
+				</div>	
+				<div id="mob-title" class="uk-navbar-center uk-hidden@s">Chinese Tea World</div>
+                <div class="uk-navbar-center uk-visible@s">
+					<ul class="uk-navbar-nav">
+						<li class="uk-active"><a href="index.html" uk-icon="icon: home"></a></li>
+						
+						<li>
+							<a href="">Types of tea</a>
+							<div id="drdwn" class="uk-navbar-dropdown">
+								<ul id="drdwn-menu" class="uk-nav uk-navbar-dropdown-nav">
+									<li><a href="./types/black-tea.html">Black Tea</a></li>
+									<li><a href="./types/cblack-tea.html">Chinese Black Tea</a></li>
+									<li><a href="./types/green-tea.html">Green Tea</a></li>
+									<li><a href="./types/oolong.html">Oolong Tea</a></li>
+									<li><a href="./types/puerh.html">Puerh Tea</a></li>
+									<li><a href="./types/white-tea.html">White Tea</a></li>
+									<li><a href="./types/yellow-tea.html">Yellow Tea</a></li>
+								</ul>
+							</div> 
+						</li>
+						
+						<li><a href="history.html">History</a></li>
+						<li><a href="health-tea.html">Health Benefits</a></li>
+						<li><a href="brewing-tea.html">Brewing Tea</a></li>
+						<li><a href="contacts.html">Contacts</a></li>
+						
+					</ul>
+
+
+				</div>
+
+				<!-- Adding searh bar to the right, that will appear below the search icon after click.
+				Search form will appear in a flex box and will take 100% of flex box space (uk-width-1-1) -->
+
+				<div class="uk-navbar-right">
+					<ul class="uk-navbar-nav">
+						<li><a class="uk-navbar-toggle uk-visible@s" uk-search-icon href="#"></a>
+						
+							<div class="uk-drop" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+								<div class="uk-grid-small uk-flex-middle" uk-grid>
+									<div class="uk-width-expand">
+										<form class="uk-search uk-search-navbar uk-width-1-1">
+											<input class="uk-search-input" type="search" placeholder="Looking for..." autofocus>
+										</form>
+									</div>
+									<div class="uk-width-auto">
+										<a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+							    	</div>	
+								</div>
+							</div>
+						</li>
+
+						<!-- Adding mobile menu icon for small screen sizes -->
+
+						<li class="uk-hidden@s"><a class="uk-navbar-toggle" uk-icon="menu" href="#offcanvas-nav" uk-toggle></a>
+						</li>
+					</ul>
+				</div>	
+			</nav>
+		</header>
+
+	<!-- Offcanvas menu content: side bar will be sliding from the right (flip:true) 
+		Also made accordion effect for childs menues of "Types of Tea" parent -->
+
+	<div class="uk-offcanvas-content">
+		<div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true">
+        	<div class="uk-offcanvas-bar">
+
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <li class="uk-active"><a href="index.html">Main Page</a></li>
+                <li class="uk-parent">
+                    <a href="">Types of Tea</a>
+                    	<ul class="uk-nav-sub">
+                        	<li><a href="./types/black-tea.html">Black Tea</a></li>
+							<li><a href="./types/cblack-tea.html">Chinese Black Tea</a></li>
+							<li><a href="./types/green-tea.html">Green Tea</a></li>
+							<li><a href="./types/oolong.html">Oolong Tea</a></li>
+							<li><a href="./types/puerh.html">Puerh Tea</a></li>
+							<li><a href="./types/white-tea.html">White Tea</a></li>
+							<li><a href="./types/yellow-tea.html">Yellow Tea</a></li>
+                    	</ul>
+                </li>
+                <li><a href="history.html">History</a></li>
+				<li><a href="health-tea.html">Health Benefits</a></li>
+				<li><a href="brewing-tea.html">Brewing Tea</a></li>
+				<li><a href="contacts.html">Contacts</a></li>
+                
+            </ul>
+        </div>
+
+	</div>	
+
+	<!-- Making grid of 3 columns 1st:expand auto; 2d: 1/3 of screen at 640px+, 1/4 of screen at 960px+; 3d: 1/3 of screen -->
+
+		<div id="main" class="uk-grid-medium" uk-grid>
+			<div id="content" class="uk-card uk-width-expand">
+				<div id="content-image">
+					<img src="./images/tea-tmc1.jpg" alt="Tea in TMC"/>
+				</div>
+				<div id="info" class="uk-card-body">
+				
+					<h3>Tea Health Benefits</h3>
+					
+					<p>There are many health benefits attributed to drinking Chinese tea, ranging from feelings of well-being to near magical cures. For Western People, much of this interest is focused on ancient claims related to weight loss and more modern claims of cancer-prevention due to tea's anti-oxidant properties. Different tea types have different effect on person's health.</p>
+					<p>Here is some of the benefits of Chinese Teas as commonly recognized in Traditional Chinese Medicine: reduce fat, protein and low-density “bad” cholesterol; tea catechins have anti-bacterial and anti-virus properties; can reduce inflammation caused by rheumatoid arthritis; can reduce skin irritations.</p>
+					
+				</div>
+			</div>
+			<section id="middle" class="uk-card uk-width-1-3@s uk-width-1-4@m">
+				
+				<h2>DID YOU KNOW?</h2>
+				
+				<div id="middle-info" class="uk-card-body">
+				<p><b>Green Tea.</b> One of the powerful compounds in green tea is the antioxidant <em>Epigallocatechin Gallate (EGCG)</em>, which has been studied to treat various diseases and may be one of the main reasons green tea has such powerful medicinal properties.</p>
+				<p><b>Pu-Erh.</b> Studies show that Pu-erh does contain small amounts of <em>lovastatin</em>, which in synthetic form is commonly used to treat high cholesterol.  Additional studies have shown that long term use of appropriate amounts of Pu-Erh teas have the potential to <em>lower LDL cholesterol</em> (the bad cholesterol) and increase HDL levels (the good cholesterol).</p>
+
+				</div>
+
+				<div class="uk-card-media-bottom">
+					<img src="./images/Field.jpg" alt="Green Tea"/>
+				</div>
+
+			</section>
+			<aside class="uk-width-1-3">
+				<ul id="myiframe">
+					<li><h3>Would you like to know more?</h3></li>
+					<li><iframe src="https://www.youtube.com/embed/0DmxMcDXEQ0" allowfullscreen></iframe></li>
+					<li><iframe src="https://www.youtube.com/embed/m6yiKKXRs2o" allowfullscreen></iframe></li>
+				</ul>
+				
+
+			</aside>
+		
+		</div>
+
+		<a id="totop" href="#" uk-totop uk-scroll></a>
+
+		<footer id="myfooter" class="uk-modal-footer">
+			<p>&copy; 2017 Andrey Kolchin 
+			<a href="https://www.instagram.com/andrewwwk/" class="uk-icon-button" uk-icon="icon: instagram"></a>
+
+			</p>
+		</footer>
+    </body>
+</html>

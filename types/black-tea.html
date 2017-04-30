@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="description" content="Black Tea: know more">
+		<meta name="keywords" content="Tea, chinese tea, tea culture, tea history, tea brewing, black tea, white tea, oolong, green tea, yellow tea, puer tea, puerh, pu'er, pu erh">
+        <title>Black Tea. Chinese Tea</title>
+        <link rel="stylesheet" href="../css/uikit.min.css"/>
+		<link rel="stylesheet" href="../css/mystyles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../js/uikit.min.js"></script>
+        <script src="../js/uikit-icons.min.js"></script>
+        <script src="../js/myjavascript.js"></script>
+    </head>
+    <body>
+		
+		<header>
+		<!-- Nav with dropdown menu goes here -->
+			<nav id="mynav" class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left">
+					<a class="uk-navbar-brand" href="../index.html"><img id="logo" src="../images/logos.jpg" title="World of Chinese Tea" alt="World of Chinese Tea"/></a>
+				</div>
+				<div id="mob-title" class="uk-navbar-center uk-hidden@s">Chinese Tea World</div>	
+                <div class="uk-navbar-center uk-visible@s">
+					<ul class="uk-navbar-nav">
+						<li class="uk-active"><a href="../index.html" uk-icon="icon: home"></a></li>
+						
+						<li>
+							<a href="">Types of tea</a>
+							<div id="drdwn" class="uk-navbar-dropdown">
+								<ul id="drdwn-menu" class="uk-nav uk-navbar-dropdown-nav">
+									<li><a href="./black-tea.html">Black Tea</a></li>
+									<li><a href="./cblack-tea.html">Chinese Black Tea</a></li>
+									<li><a href="./green-tea.html">Green Tea</a></li>
+									<li><a href="./oolong.html">Oolong Tea</a></li>
+									<li><a href="./puerh.html">Puerh Tea</a></li>
+									<li><a href="./white-tea.html">White Tea</a></li>
+									<li><a href="./yellow-tea.html">Yellow Tea</a></li>
+								</ul>
+							</div> 
+						</li>
+						
+						<li><a href="../history.html">History</a></li>
+						<li><a href="../health-tea.html">Health Benefits</a></li>
+						<li><a href="../brewing-tea.html">Brewing Tea</a></li>
+						<li><a href="../contacts.html">Contacts</a></li>
+						
+					</ul>
+
+
+				</div>
+
+				<!-- Adding searh bar to the right, that will appear below the search icon after click.
+				Search form will appear in a flex box and will take 100% of flex box space (uk-width-1-1) -->
+
+				<div class="uk-navbar-right">
+					<ul class="uk-navbar-nav">
+						<li><a class="uk-navbar-toggle uk-visible@s" uk-search-icon href="#"></a>
+						
+							<div class="uk-drop" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+								<div class="uk-grid-small uk-flex-middle" uk-grid>
+									<div class="uk-width-expand">
+										<form class="uk-search uk-search-navbar uk-width-1-1">
+											<input class="uk-search-input" type="search" placeholder="Looking for..." autofocus>
+										</form>
+									</div>
+									<div class="uk-width-auto">
+										<a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+							    	</div>	
+								</div>
+							</div>
+						</li>
+
+						<!-- Adding mobile menu icon for small screen sizes -->
+
+						<li class="uk-hidden@s"><a class="uk-navbar-toggle" uk-icon="menu" href="#offcanvas-nav" uk-toggle></a>
+						</li>
+					</ul>
+				</div>	
+			</nav>
+		</header>
+
+	<!-- Offcanvas menu content: side bar will be sliding from the right (flip:true) 
+		Also made accordion effect for childs menues of "Types of Tea" parent -->
+
+	<div class="uk-offcanvas-content">
+		<div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true">
+        	<div class="uk-offcanvas-bar">
+
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <li class="uk-active"><a href="../index.html">Main Page</a></li>
+                <li class="uk-parent">
+                    <a href="">Types of Tea</a>
+                    	<ul class="uk-nav-sub">
+                        	<li><a href="./black-tea.html">Black Tea</a></li>
+							<li><a href="./cblack-tea.html">Chinese Black Tea</a></li>
+							<li><a href="./green-tea.html">Green Tea</a></li>
+							<li><a href="./oolong.html">Oolong Tea</a></li>
+							<li><a href="./puerh.html">Puerh Tea</a></li>
+							<li><a href="./white-tea.html">White Tea</a></li>
+							<li><a href="./yellow-tea.html">Yellow Tea</a></li>
+                    	</ul>
+                </li>
+                <li><a href="../history.html">History</a></li>
+				<li><a href="../health-tea.html">Health Benefits</a></li>
+				<li><a href="../brewing-tea.html">Brewing Tea</a></li>
+				<li><a href="../contacts.html">Contacts</a></li>
+                
+            </ul>
+        </div>
+
+	</div>	
+
+	<!-- Making grid of 3 columns 1st:expand auto; 2d: 1/3 of screen at 640px+, 1/4 of screen at 960px+; 3d: 1/3 of screen -->
+
+		<div id="main" class="uk-grid-medium" uk-grid>
+			<div id="content" class="uk-card uk-width-expand">
+				<div id="content-image">
+					<img src="../images/black-tea.jpg" alt="Black Tea cup"/>
+				</div>
+				<div id="info" class="uk-card-body">
+				
+					<h3>Black Tea</h3>
+					
+					<p>Black tea is a type of tea that is more oxidized than oolong, green and white teas. Black tea is generally stronger in flavor than the less oxidized teas. In Chinese language black tea is known as "red tea" (紅茶 hóngchá),a description of the colour of the liquid; the Western term "black tea" refers to the colour of the oxidized leaves. In Chinese, "black tea" is a commonly used classification for post-fermented teas.</p>
+					<p>While green tea usually loses its flavor within a year, black tea retains its flavour for several years. For this reason, it has long been an article of trade. Generally, unblended black teas are named after the region in which they are produced.</p>
+					<p>Black Tea is among the easiest to brew, as they will stand a variety of water temperatures, but most like is hot. Generally, 4 grams of tea per 200 ml of water should be steeped in water brought up to 90–95 °C. The first brew should be 60 sec., the second brew 40 sec., and the third brew 60 sec. If your tea is of high quality, you can continue to brew by progressively adding 10 sec. to the brew time following the third infusion</p>
+
+					
+				</div>
+			</div>
+			<section id="middle" class="uk-card uk-width-1-3@s uk-width-1-4@m">
+				
+				<h2>DID YOU KNOW?</h2>
+				
+				<div id="middle-info" class="uk-card-body">
+				<p><b>Red Tea.</b> In Chinese, Japanese, Korean, Bengali, Assamese and other Asian languages <em>black tea</em> called as 紅茶 (literally "red tea"), because of the liquid color. Outside of China and its neighbouring countries, "red tea" more commonly refers to <em>rooibos</em>, a South African herbal tea.</p>
+				<p><b>Assam Tea.</b> Black tea named after the region of its production, Assam, in India. It is also traditionally used in Yunnan province in China. This tea, most of which is grown at or near sea level, is known for its body, briskness, malty flavour, and strong, bright colour. Assam teas, or blends containing Assam, are often sold as <em>"breakfast" teas</em>. For instance, <em>Irish breakfast tea</em>, a maltier and stronger breakfast tea, consists of small-sized Assam tea leaves.</p>
+
+				</div>
+
+				<div class="uk-card-media-bottom">
+					<img src="../images/Field.jpg" alt="Green Tea"/>
+				</div>
+
+			</section>
+			<aside class="uk-width-1-3">
+				<ul id="myiframe">
+					<li><h3>Would you like to know more?</h3></li>
+					<li><iframe src="https://www.youtube.com/embed/j1t1mlR8QZs" allowfullscreen></iframe></li>
+					<li><iframe src="https://www.youtube.com/embed/m6yiKKXRs2o" allowfullscreen></iframe></li>
+				</ul>
+				
+
+			</aside>
+		
+		</div>
+
+		<a id="totop" href="#" uk-totop uk-scroll></a>
+
+		<footer id="myfooter" class="uk-modal-footer">
+			<p>&copy; 2017 Andrey Kolchin 
+			<a href="https://www.instagram.com/andrewwwk/" class="uk-icon-button" uk-icon="icon: instagram"></a>
+
+			</p>
+		</footer>
+    </body>
+</html>

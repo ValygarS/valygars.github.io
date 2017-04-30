@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="description" content="White Tea: know more">
+		<meta name="keywords" content="Tea, chinese tea, tea culture, tea history, tea brewing, black tea, white tea, oolong, green tea, yellow tea, puer tea, puerh, pu'er, pu erh">
+        <title>White Tea. Chinese Tea</title>
+        <link rel="stylesheet" href="../css/uikit.min.css"/>
+		<link rel="stylesheet" href="../css/mystyles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../js/uikit.min.js"></script>
+        <script src="../js/uikit-icons.min.js"></script>
+        <script src="../js/myjavascript.js"></script>
+    </head>
+    <body>
+		
+		<header>
+		<!-- Nav with dropdown menu goes here -->
+			<nav id="mynav" class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left">
+					<a class="uk-navbar-brand" href="../index.html"><img id="logo" src="../images/logos.jpg" title="World of Chinese Tea" alt="World of Chinese Tea"/></a>
+				</div>	
+				<div id="mob-title" class="uk-navbar-center uk-hidden@s">Chinese Tea World</div>
+                <div class="uk-navbar-center uk-visible@s">
+					<ul class="uk-navbar-nav">
+						<li class="uk-active"><a href="../index.html" uk-icon="icon: home"></a></li>
+						
+						<li>
+							<a href="">Types of tea</a>
+							<div id="drdwn" class="uk-navbar-dropdown">
+								<ul id="drdwn-menu" class="uk-nav uk-navbar-dropdown-nav">
+									<li><a href="./black-tea.html">Black Tea</a></li>
+									<li><a href="./cblack-tea.html">Chinese Black Tea</a></li>
+									<li><a href="./green-tea.html">Green Tea</a></li>
+									<li><a href="./oolong.html">Oolong Tea</a></li>
+									<li><a href="./puerh.html">Puerh Tea</a></li>
+									<li><a href="./white-tea.html">White Tea</a></li>
+									<li><a href="./yellow-tea.html">Yellow Tea</a></li>
+								</ul>
+							</div> 
+						</li>
+						
+						<li><a href="../history.html">History</a></li>
+						<li><a href="../health-tea.html">Health Benefits</a></li>
+						<li><a href="../brewing-tea.html">Brewing Tea</a></li>
+						<li><a href="../contacts.html">Contacts</a></li>
+						
+					</ul>
+
+
+				</div>
+
+				<!-- Adding searh bar to the right, that will appear below the search icon after click.
+				Search form will appear in a flex box and will take 100% of flex box space (uk-width-1-1) -->
+
+				<div class="uk-navbar-right">
+					<ul class="uk-navbar-nav">
+						<li><a class="uk-navbar-toggle uk-visible@s" uk-search-icon href="#"></a>
+						
+							<div class="uk-drop" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+								<div class="uk-grid-small uk-flex-middle" uk-grid>
+									<div class="uk-width-expand">
+										<form class="uk-search uk-search-navbar uk-width-1-1">
+											<input class="uk-search-input" type="search" placeholder="Looking for..." autofocus>
+										</form>
+									</div>
+									<div class="uk-width-auto">
+										<a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+							    	</div>	
+								</div>
+							</div>
+						</li>
+
+						<!-- Adding mobile menu icon for small screen sizes -->
+
+						<li class="uk-hidden@s"><a class="uk-navbar-toggle" uk-icon="menu" href="#offcanvas-nav" uk-toggle></a>
+						</li>
+					</ul>
+				</div>	
+			</nav>
+		</header>
+
+	<!-- Offcanvas menu content: side bar will be sliding from the right (flip:true) 
+		Also made accordion effect for childs menues of "Types of Tea" parent -->
+
+	<div class="uk-offcanvas-content">
+		<div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true">
+        	<div class="uk-offcanvas-bar">
+
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <li class="uk-active"><a href="../index.html">Main Page</a></li>
+                <li class="uk-parent">
+                    <a href="">Types of Tea</a>
+                    	<ul class="uk-nav-sub">
+                        	<li><a href="./black-tea.html">Black Tea</a></li>
+							<li><a href="./cblack-tea.html">Chinese Black Tea</a></li>
+							<li><a href="./green-tea.html">Green Tea</a></li>
+							<li><a href="./oolong.html">Oolong Tea</a></li>
+							<li><a href="./puerh.html">Puerh Tea</a></li>
+							<li><a href="./white-tea.html">White Tea</a></li>
+							<li><a href="./yellow-tea.html">Yellow Tea</a></li>
+                    	</ul>
+                </li>
+                <li><a href="../history.html">History</a></li>
+				<li><a href="../health-tea.html">Health Benefits</a></li>
+				<li><a href="../brewing-tea.html">Brewing Tea</a></li>
+				<li><a href="../contacts.html">Contacts</a></li>
+                
+            </ul>
+        </div>
+
+	</div>	
+
+	<!-- Making grid of 3 columns 1st:expand auto; 2d: 1/3 of screen at 640px+, 1/4 of screen at 960px+; 3d: 1/3 of screen -->
+
+		<div id="main" class="uk-grid-medium" uk-grid>
+			<div id="content" class="uk-card uk-width-expand">
+				<div id="content-image">
+					<img src="../images/bai-mudan_l.jpg" alt="White Tea. Bai Mudan"/>
+				</div>
+				<div id="info" class="uk-card-body">
+				
+					<h3>White Tea</h3>
+					
+					<p>White tea may refer to one of several styles of tea which generally feature young or minimally processed leaves of the Camellia sinensis plant. There is no generally accepted definition of white tea and very little international agreement, but most definitions agree, that white tea is not rolled or oxidized, resulting in a flavour characterized as "lighter" than green or traditional black teas.</p>
+
+					<p>In spite of its name, brewed white tea is pale yellow. Its name derives from the fine silvery-white hairs on the unopened buds of the tea plant, which give the plant a whitish appearance. It is harvested primarily in China, mostly in the Fujian province.</p>
+					<p>The base process for manufacturing white tea is as follows: Fresh tea leaf → withering → drying (air drying, solar drying or mechanical drying) → white tea. Selection of raw material in white tea manufacture is extremely stringent; only the plucking of young tea leaves with much fine hair can produce good-quality white tea of a high pekoe (grading) value.</p>
+					<p>Famous white tea types includes: Bai Mudan (white peony), Baihao Yinzhen, Shoumei tea.</p>
+
+					
+				</div>
+			</div>
+			<section id="middle" class="uk-card uk-width-1-3@s uk-width-1-4@m">
+				
+				<h2>DID YOU KNOW?</h2>
+				
+				<div id="middle-info" class="uk-card-body">
+				<p><b>Pekoe.</b> In the tea industry, <em>tea leaf grading</em> is the process of evaluating products based on the quality and condition of the tea leaves themselves. The highest grades are referred to as "orange pekoe", and the lowest as "fannings" or "dust".</p>
+				<p><b>Baihao Yinzhen.</b> Is also known as White Hair Silver Needle, a white tea produced in Fujian Province in China. Amongst white teas, this is the most expensive variety and the most prized, as <em>only top buds</em> (leaf shoots) are used to produce the tea. Genuine Silver Needles are made from cultivars of the Da Bai (Large White) tea tree family.</p>
+				<p><b>Flavour.</b> White tea tends to have the <em>most delicate</em> flavors and aromas. The nuances are gentle, even elusive, evoking fresh flavors like bamboo or asparagus or earthier elements like almonds. Aromas tend towards subtle floral bouquets.</p>
+				<p><b>Common Cold.</b> White tea is a good remedy for various common diseases. Intake of white tea provides relief to those suffering from flu and common cold.</p>
+
+				</div>
+
+				<div class="uk-card-media-bottom">
+					<img src="../images/Field.jpg" alt="Green Tea"/>
+				</div>
+
+			</section>
+			<aside class="uk-width-1-3">
+				<ul id="myiframe">
+					<li><h3>Would you like to know more?</h3></li>
+					<li><iframe src="https://www.youtube.com/embed/LrOyPvlpK_E" allowfullscreen></iframe></li>
+					<li><iframe src="https://www.youtube.com/embed/EUuw5rqWkZU" allowfullscreen></iframe></li>
+				</ul>
+				
+
+			</aside>
+		
+		</div>
+
+		<a id="totop" href="#" uk-totop uk-scroll></a>
+
+		<footer id="myfooter" class="uk-modal-footer">
+			<p>&copy; 2017 Andrey Kolchin 
+			<a href="https://www.instagram.com/andrewwwk/" class="uk-icon-button" uk-icon="icon: instagram"></a>
+
+			</p>
+		</footer>
+    </body>
+</html>
