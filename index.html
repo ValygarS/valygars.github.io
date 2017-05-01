@@ -14,8 +14,9 @@
         <script src="./js/myjavascript.js"></script>
 
     </head>
-    <body>
-		
+    <body class="site">
+    	
+			
 		<header>
 		<!-- Nav with dropdown menu goes here -->
 			<nav id="mynav" class="uk-navbar-container" uk-navbar>
@@ -84,14 +85,14 @@
 
 	<!-- Offcanvas menu content: side bar will be sliding from the right (flip:true) 
 		Also made accordion effect for childs menues of "Types of Tea" parent -->
+		<div class="uk-offcanvas-content">
+		
+			<div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true">
+        		<div class="uk-offcanvas-bar">
 
-	<div class="uk-offcanvas-content">
-		<div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true">
-        	<div class="uk-offcanvas-bar">
-
-            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                <li class="uk-active"><a href="">Main Page</a></li>
-                <li class="uk-parent">
+            	<ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                	<li class="uk-active"><a href="">Main Page</a></li>
+                	<li class="uk-parent">
                     <a href="">Types of Tea</a>
                     	<ul class="uk-nav-sub">
                        		<li><a href="./types/black-tea.html">Black Tea</a></li>
@@ -102,19 +103,19 @@
 							<li><a href="./types/white-tea.html">White Tea</a></li>
 							<li><a href="./types/yellow-tea.html">Yellow Tea</a></li>
                     	</ul>
-                </li>
-                <li><a href="history.html">History</a></li>
-				<li><a href="health-tea.html">Health Benefits</a></li>
-				<li><a href="brewing-tea.html">Brewing Tea</a></li>
-				<li><a href="contacts.html">Contacts</a></li>
+                	</li>
+                	<li><a href="history.html">History</a></li>
+					<li><a href="health-tea.html">Health Benefits</a></li>
+					<li><a href="brewing-tea.html">Brewing Tea</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
                 
-            </ul>
-        </div>
-
-	</div>	
+            	</ul>
+        		</div>
+			</div>	
+		
 
 <!-- Making grid of 3 columns 1st:expand auto; 2d: 1/3 of screen at 640px+, 1/4 of screen at 960px+; 3d: 1/3 of screen -->
-
+	
 		<div id="main" class="uk-grid-medium" uk-grid>
 			<div id="content" class="uk-card uk-width-expand">
 				<div id="content-image">
@@ -126,7 +127,7 @@
 					
 					<p>Chinese tea is a beverage made from the leaves of tea plants (Camellia sinensis) and boiled water. 
 					Tea leaves are processed using traditional Chinese methods.</p>
-					<p>Chinese tea can be classified at least into five distinctive categories: white, green, oolong, black and post-fermented. Others add categories for scented and compressed teas. All of these come from varieties of the Camellia sinensis plant. Most Chinese teas are consumed in China and are not exported, except to Chinese-speaking communities in other countries. Green tea is the most popular type of tea consumed in China.<br>At this website you can read some basic information and facts about most populat varieties of tea and Chinese Tea Culture.</p>
+					<p>Chinese tea can be classified at least into five distinctive categories: white, green, oolong, black and post-fermented. Others add categories for scented and compressed teas. All of these come from varieties of the Camellia sinensis plant. Most Chinese teas are consumed in China and are not exported, except to Chinese-speaking communities in other countries. Green tea is the most popular type of tea consumed in China.<br>At this website you can read some basic information and facts about most popular varieties of tea and Chinese Tea Culture.</p>
 				</div>
 			</div>
 			<section id="middle" class="uk-card uk-width-1-3@s uk-width-1-4@m">
@@ -138,8 +139,8 @@
 				<p><b>Loose tea.</b> Loose tea is, for <em>connoisseurs</em>, the best way to taste tea: the quality of the tea leaves, which are often whole, and not broken up as in tea bags, is often higher, and retains more of their original flavor.</p>
 				</div>
 
-				<div class="uk-card-media-bottom">
-					<img src="./images/Field.jpg" srcset="./images/Field_s.jpg 250w" alt="Green Tea"/>
+				<div id="middle-img" class="uk-card-media-bottom">
+					<img src="./images/Field.jpg" alt="Green Tea"/>
 				</div>
 
 			</section>
@@ -156,12 +157,13 @@
 
 		<a id="totop" href="#" uk-totop uk-scroll></a>
 		
+		</div>
 		<footer id="myfooter" class="uk-modal-footer">
 			<p>&copy; 2017 Andrey Kolchin 
 			<a href="https://www.instagram.com/andrewwwk/" class="uk-icon-button" uk-icon="icon: instagram"></a>
 
 			</p>
 		</footer>
-		
+	
     </body>
 </html>

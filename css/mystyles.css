@@ -45,6 +45,10 @@ to be hidden on smaller screen devices. */
 	padding: 0px 20px 20px 20px;
 } 
 
+#middle-img {
+	max-width: 100%;
+}
+
 #myiframe {
 	padding: 0;
   	list-style: none;
@@ -128,3 +132,14 @@ body {
 	background-image: url(../images/website-background.jpg);
 }
 
+/*Found solution for sticky footer. If there is not enough content on the page, footer still stick in the bottom. */
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.uk-offcanvas-content {
+  flex: 1;
+}
